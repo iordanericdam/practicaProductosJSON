@@ -1,0 +1,14 @@
+.divGenerico {
+  margin-top: 3%;
+  margin-right: 2%;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px grey;
+}
+
+.form-select{
+ display: inline;
+ width: 20%;
+}
+

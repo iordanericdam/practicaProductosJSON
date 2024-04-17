@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./utils/style.css" />
+    <script src="./utils/script.js"></script>
+    <title>Actividad 1 Trimestre 3</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tienda ONLINE</h1>
+      <div id="filtros" class="divGenerico">
+        <h3>Filtro:</h3>
+        <select class="form-select" id="select">
+          <option value="all">Todo</option>
+          <option value="precioMinimo">Ordenar precio mas bajo primero</option>
+          <option value="marca">Marca</option>
+          <option value="categoria">Categoria</option>
+        </select>
+        <input  list="selectMarcas" id="selectMarca" style="display: none;" class="form-select">  
+        <datalist id="selectMarcas">
+          <option value="Apple"></option>
+          <option value="Samsung"></option>
+          <option value="OPPO"></option>
+          <option value="Huawei"></option>
+          <option value="Samsung"></option>
+          <option value="Microsoft Surface"></option>
+          <option value="Infinix"></option>
+          <option value="HP Pavilion"></option>
+          <option value="Impression of Acqua Di Gio"></option>
+          <option value="Royal_Mirage"></option>
+          <option value="Fog Scent Xpressio"></option>
+          <option value="Al Munakh"></option>
+          <option value="Lord - Al-Rehab"></option>
+          <option value="L'Oreal Paris"></option>
+          <option value="Hemani Tea"></option>
+          <option value="Dermive"></option>
+          <option value="ROREC White Rice"></option>
+          <option value="Fair & Clear"></option>
+          <option value="Saaf & Khaas"></option>
+          <option value="Bake Parlor Big"></option>
+          <option value="fauji"></option>
+          <option value="Dry Rose"></option>
+          <option value="Boho Decor"></option>
+          <option value="Flying Wooden"></option>
+          <option value="LED Lights"></option>
+          <option value="luxury palace"></option>
+          <option value="Golden"></option>
+        </datalist>
+        <select  id="selectCategoria" style="display: none;" class="form-select">
+        <option value="smartphones">Moviles</option>
+        <option value="laptops">Portatiles</option>
+        <option value="fragrances">Perfumes</option>
+        <option value="skincare">Cuidado de piel</option>
+        <option value="groceries">groceries</option>
+        <option value="home-decoration">Decoracion de la casa</option>
+        </select>
+   
+        <button class="btn btn-primary" id="btnSelect">Aplicar filtro</button>
+      </div>
+      <div class="row">
+        <div class="col divGenerico">
+          <h2>Items</h1>
+              <div id="lista_productos" class="row"></div>
+        </div>
+        <div class="col divGenerico">
+            <h2>Cesta</h2>
+            <div id="lista_cesta" class="row"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
